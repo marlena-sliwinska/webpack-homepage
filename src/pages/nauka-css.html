@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend</title> 
+    <!--
+    <link href="style.css" rel="stylesheet" type="text/css" /> -->
+  </head>
+
+  <body class="body">
+    <header class="nav">
+      <nav>
+        <a href="index.html">strona główna </a>
+        <a href="nauka-html.html">HTML </a>
+        <a href="nauka-css.html">CSS </a>
+        <a href="nauka-js.html">JavaScript</a>
+        <a href="inne.html">inne</a>
+      </nav>
+    </header>
+    <main>
+      <header class="top" id="top">
+        <h1>FRONTEND</h1>
+        <img src="droga.jpg" width="300" alt="path" /><br /><br />
+        <i>Sky is the limit! Never regret & no more blaming!</i>
+      </header>
+
+      <section class="notatki" id="notatki">
+        <h2>CSS</h2>
+        <article>
+          <h3>Co to jest CSS</h3>
+          <p>
+            CSS - Cascadin Style Sheets - Kaskadowe arkusze stylów<br />Składnia
+            CSS to reguły: selektor {właściwość: wartość;}
+          </p>
+        </article>
+        <article>
+          <h3>klasy</h3>
+          Kilka zasad podczas tworzenia klas: - nazewnictwo - pojedyncze słowa
+          lub angielskie słowa - kebab-case
+          <h3>specyficzność</h3>
+          <p>
+            Przeglądając kody html i arkusze stylów strony internetowej
+            zwierciadło.pl zastanawiałam się skąd wynikają przekreślenia w
+            kodzie. Teraz już wiem, przekreślenia są spowodowane
+            specyficznością. Jeden element moze być w cssie ostylowany na wiele
+            sposobów, ale wyświetlony tylko na jeden. Na jaki? o tym wlasnie
+            decyduje specyficzność.
+          </p>
+          Poniżej schemat pokazujący możliwości stylowania (od lewej
+          najwazniejsza do prawej, która zawsze przegryw)
+          <br />
+          <img src="specyficznosc.PNG" alt="specyficznosc" height="160" />;
+          <br />
+          Nagroda? dla tego kto zdobedzie najwiecej najważniejszych medali..
+          <br />
+          <img src="nagroda.PNG" alt="puchar" />; <br />
+          Co jeśli mamy remis? W tej sytuacji wygrywa ten, który jest bliżej
+          elementu. Jeśli plik css zaimplementowany jest na samej górze, to
+          bliżej elementu jest to co mamy niżej w pliku css.
+          <br />
+          <img src="rowna_specyficznosc.PNG" alt="remis" width="50" />;
+        </article>
+      </section>
+      <section>
+        <h2>życie w pudełku</h2>
+        <p>
+          W czwartym tygodniu kursu co ten frontend w lekcjach pod hasłem "życie
+          w pudełku". nauczyłam się jak budować, łączyć, układać przy pomocy
+          CSSa różne "boxy" na naszej stronie internetowej.
+        </p>
+
+        <article>
+          <h3>position</h3>
+          <p>
+            Własność position - pozycjonowanie elementów w przestrzeni wartość
+            domyślna - static wartość - relative - pamietaj o poprawnej wymowie.
+            Dzieki tej pozycji mozemy np. skorzystac z innych pozycji. wartość -
+            z-index - decyduje co jest na gorz wartość absolute wartość fixed -
+            zafiksowany - menu, nagłowki własności - top, right, left Jeśli nic
+            nie jest zdefiniowane to wszystko jest wzgledem body, jesli w innym
+            elemencie to wzgledem tego elementu
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <i> Strona domowa Marleny Śliwińskiej </i><br />
+      <img src="marlenka.jpg" height="200" alt="Marlena Śliwińśka" /><br />
+      <a href="#top">Wróć na górę strony</a>
+    </footer>
+    <!--
+    <script src="main.js"></script>  -->
+  </body>
+</html>

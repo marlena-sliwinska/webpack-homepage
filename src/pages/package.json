@@ -1,0 +1,29 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass": "npx node-sass -w sass/style.scss style.css",
+    "cow": "cowsay -w thanks Maciek",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlena-sliwinska/homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marlena-sliwinska/homepage/issues"
+  },
+  "homepage": "https://github.com/marlena-sliwinska/homepage#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "cow": "^0.2.3",
+    "cowsay": "^1.4.0"
+  }
+}

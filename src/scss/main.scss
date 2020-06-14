@@ -11,3 +11,174 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.homepage {
+  background-color: rgb(178, 189, 172);
+  text-align: justify;
+  width: 100vw;
+  padding: 20px;
+  margin: 60px auto 0;
+ display: grid;
+ grid-template-areas: 
+  
+  "homepage__header homepage__header"
+  "homepage__frontend homepage__aboutme"
+  "footer footer" ;
+    grid-template-columns: 400px 1fr; 
+}
+
+  .header {
+    background: blanchedalmond;
+    position: fixed;
+    min-height: 60px;
+    top: 0;
+    width: 100%;
+  }
+
+.navigation {
+  display: none;
+}
+
+.navigation__link {
+  border: solid black 1px;
+  background: darkgray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  min-width: 160px;
+  text-align: center;
+  }
+
+
+.homepage__header {
+  text-align: center;
+  margin-bottom: 20px;
+  grid-area: homepage__header;
+}
+.homepage__header--heading {
+}
+.homepage__header--images {
+  height: 300px;
+}
+
+
+
+.homepage__aboutme {
+  background: rgb(42, 49, 58);
+  padding: 15px;
+  color: rgb(178, 189, 172);
+  grid-area: homepage__aboutme;
+}
+
+.homepage__aboutme--photos {
+  float: right;
+  position: relative;
+  float: right;
+  padding: 20px;
+  top: 75px;
+  height: 200px;
+}
+
+.homepage__aboutme--values {
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+  border: solid rgb(26, 25, 24);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.homepage__aboutme--heading {
+  padding-left: 100px;
+
+}
+
+.homepage__aboutme--articles {
+  border:  rgb(91, 121, 158) solid 3px;
+  border-radius: 10 px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.homeage__frontend {
+  background: rgb(91, 121, 158);
+  
+  margin: 0 auto;
+  grid-area: homepage__frontend;
+}
+
+.homepage__frontend--boxes {
+  background: rgb(0, 24, 54);
+  color: #c6cac3;
+  box-sizing: border-box;
+  width: 300px;
+  height: 250px;
+  text-align: left;
+  border-radius: 10%;
+  padding: 30px;
+  overflow: auto;
+  margin: 20px;
+  display: inline-block;
+}
+
+.homepage__frontend--headings {
+  text-align: center;
+  border: solid #c6cac3;
+  border-radius: 5px;
+  width: 50px;
+  padding: 5px;
+  margin: 0 auto;
+  background: rgb(19, 39, 65);
+}
+
+.footer
+{
+  
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  
+}
+
+
+
+.form {
+  color: white;
+}
+
+@media (min-width: 768px) {
+
+  .navigation {
+    background: rgb(104, 104, 104);
+    display: flex;
+    height: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .burger {
+    display: none;
+  }
+  
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+
+}

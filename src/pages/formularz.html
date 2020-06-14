@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend</title>
+    <!--
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" /> -->
+  </head>
+
+  <body>
+    <header class="header">
+      <button class="burger burger--js">MENU</button>
+
+      <nav class="navigation navigation--js">
+        <a class="navigation__link" href="index.html">strona główna </a>
+        <a class="navigation__link" href="nauka-html.html">HTML </a>
+        <a class="navigation__link" href="nauka-css.html">CSS </a>
+        <a class="navigation__link" href="nauka-js.html">JavaScript</a>
+        <a class="navigation__link" href="inne.html">inne</a>
+        <a class="navigation__link" href="formularz.html">inne</a>
+      </nav>
+    </header>
+
+    <main class="homepage">
+      <header class="homepage__header">
+        <h1 class="homepage__header--heading">FRONTEND</h1>
+        <img
+          class="homepage__header--images"
+          src="droga.jpg"
+          width="300"
+          alt="path"
+        /><br /><br />
+        <i>Droga jest celem</i>
+      </header>
+
+      <section class="form">
+        <form method="post" action="https://dev.cotenfrontend.pl/">
+          <p>
+            <label for="firstName">Twoje imię </label
+            ><input name="name" id="firstName" value="Marlena"/>
+          </p>
+          <p>
+            <label>Twoje nazwisko <input name="Surname" id="Surname" /></label>
+          </p>
+          <p>
+            <label
+              >Twój wiek
+              <input class="age--js" name="age" id="age" type="range" min="0" max="100" step="1" placeholder="27"
+            /></label>
+          </p>
+         
+          <fieldset>
+            <legend>Body weight</legend>
+
+            <p>
+              <label
+                >Twoja waga
+                <input name="weight" id="userWeight" type="number" placeholder="60" min="0"
+              /></label>
+              kg
+            </p>
+            <p>
+                <label
+                  >Twój wyrost
+                  <input name="height" id="userHeight" type="number" placeholder="163"
+                /></label>
+                cm
+              </p>
+          </fieldset>
+
+
+          <fieldset>
+            <legend>Body goal</legend>
+
+            <p>
+                <label for="bodyGoals">
+                <select name="goal" id="bodyGoals">
+                    <option value="loose_weight">Odzudzanie</option>
+                    <option value="weight maintenance">Utrzymanie wagi</option>
+                    <option value="gain_muscles" >Nabranie masy</option>
+
+
+                </select>
+           </label>
+          </fieldset>
+
+          
+          <p> 
+              <input name="agreement" id="permission" type="checkbox" checked> <label for="permission">Wyrażam zgodę na przetwarzanie moich danych osobowych.</label></p>
+
+              <input name="wysylanie" type="submit" value="prześlij formularz">
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <i> Strona domowa Marleny Śliwińskiej </i>
+      <img src="marlenka.jpg" height="200" alt="Marlena Śliwińśka" />
+      <a href="#top">Wróć na górę strony</a>
+    </footer>  <!--
+    <script src="main.js"></script> -->
+  </body>
+</html>
